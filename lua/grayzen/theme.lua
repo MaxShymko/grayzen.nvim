@@ -543,6 +543,11 @@ function theme.highlights(colors)
       NeogitDiffAddCursor = { fg = colors.diff_add, bg = colors.diff_add_bg, style = "underline" },
       NeogitDiffDelete = { fg = colors.diff_remove, bg = colors.diff_remove_bg },
       NeogitDiffDeleteCursor = { fg = colors.diff_remove, bg = colors.diff_remove_bg, style = "underline" },
+      NeogitFloatHeader = { bg = colors.float },
+      NeogitActiveItem = { bg = colors.active },
+      NeogitDiffHeader = { bg = colors.none, style = "bold" },
+      NeogitDiffHeaderHighlight = { bg = colors.active, style = "bold" },
+      NeogitDiffHeaderCursor = { bg = colors.active, style = "bold" },
 
       NeogitNotificationInfo = { fg = colors.info },
       NeogitNotificationWarning = { fg = colors.warn },
