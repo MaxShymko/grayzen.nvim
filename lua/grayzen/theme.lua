@@ -617,7 +617,15 @@ function theme.highlights(colors)
       LuaLineDiffAdd = { fg = colors.diff_add },
       LuaLineDiffChange = { fg = colors.diff_change },
       LuaLineDiffDelete = { fg = colors.diff_remove },
+
+      GrayzenNbsp = { fg = colors.none, bg = colors.light_yellow },
     }
+
+    vim.api.nvim_create_autocmd({ "BufWinEnter", "BufReadPost", "BufNewFile" }, {
+      callback = function()
+        vim.fn.matchadd("GrayzenNbsp", " ")
+      end,
+    })
 
     return plugins
   end
